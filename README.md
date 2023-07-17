@@ -1,43 +1,102 @@
 # ReadPi_RFID_Software
-<img src=" ">
- 
-This github provides getting started guide and other working details for ArdiPi.
+<img src="https://cdn.shopify.com/s/files/1/1217/2104/files/readpi_1.png?v=1672989840">
+
+ReadPi 125 KHz frequency based RFID Reader powered by Raspberry Pi Pico W unit. 
+This github provides getting started guide and other working details for ReadPi RFID version.
 
 ### Features:
-- Arduino UNO Form factor, so you can connect 3.3V compatible Arduino shields  
-- 
+- Powered by Raspberry Pi Pico W microcontroller  board 
+- Onboard 125KHz RFID reader Module
+- 1.3” Display for visual interaction
+- TF card slot for storage and data transfer
+- Drag- and- drop programming using mass storage over USB
+- Multifunction GPIO breakout supporting general I/O, UART, I2C, SPI, ADC & PWM function.
+- Multi- tune Buzzer to add audio alert into project
+- Onboard 5-Way Joystick allows better control- related projects
+- Status LED for board power, charging and Tag Scan indication 
+- Battery supply and charging support for portable operation
+- Multi- platform support like MicroPython, CircuitPython and Arduino IDE.
+- Comes with HID support, so device can simulate a mouse or keyboard 
 
 ### Specifications:
-- Powered by RP2040 microcontroller which is dual-core Arm Cortex-M0+ processor, 2MB of onboard flash storage, 264kB of RAM
-- 
+- RP2040 microcontroller is dual-core Arm Cortex-M0+ processor, 2MB of onboard flash storage, 264kB of RAM
+- On-board single-band 2.4GHz wireless interfaces (802.11n) for WiFi and Bluetooth® 5 (LE)
+- WPA3 & Soft access point supporting up to four clients
+- Operating voltage of pins 3.3V and board supply 5V
+- 240x240 resolution, IPS display, and 65k RGB colors
+- ST7789 display driver
+- Operating Frequency : 125KHz
+- Communication: 9600bps
+- Reading distance range: 5-10 cm, depending on TAG
+- Current Rating : < 50mA
+- Integrated Antenna
 
 ## Getting Started with ReadPi-RFID
 ### Hardware Overview
 #### Pinout
-<img src="https://github.com/sbcshop/ArdiPi_Software/blob/main/images/ArdiPi_pinout.jpg">
+<img src="https://github.com/sbcshop/ReadPi_RFID_Software/blob/main/images/ReadPi_RFID%20pinout.jpg">
 
-- (1) Buzzer 
-- (2) RPi Pico W
-- (3) Reset Button
-- (4) & (8) Multipurpose GPIO breakout 
-- (5) Power LED
-- (6) SWD & GPIO breakout
-- (7) SD card slot
-- (9) & (10) Power Pins
+- (1) 1.3” Display
+- (2) RFID/NFC Module
+- (3) Joystick 
+- (4) GPIOs breakout 
+- (5) Battery Connector
+- (6) TF card slot
+- (7) Buzzer
+- (8) Pico W
 
 #### GPIO Pins Detail
 <img src="https://github.com/sbcshop/ArdiPi_Software/blob/main/images/ArdiPI_GPIO_PinDetail.jpg">
 
 ### Interfacing Details
-  | Pico W | Hardware Pin | Function |
+- Pico W and RFID module interfacing
+  
+  | Pico W | RFID Module Pin | Function |
   |---|---|---|
-  |GP2 | SCLK | Clock pin of SPI interface for microSD card |
-  |GP3 | DIN  | MOSI (Master OUT Slave IN) data pin of SPI interface for microSD card|
-  |GP4 | DOUT | MISO (Master IN Slave OUT) data pin of SPI interface for microSD card|
-  |GP5 | CS   | Chip Select pin of SPI interface for microSD card|
-  |GP22 | Buzzer| Buzzer PWM pin connection|
+  |GP4 | RX | Serial UART connection |
+  |GP5 | TX  | Serial UART connection |
 
-Note: When SD card not connected, then above related pins can be used for normal GPIO operations.
+  
+- Pico W and Display interfacing
+  
+  | Pico W | Display Pin | Function |
+  |---|---|---|
+  |GP10 | SCLK | Clock pin of SPI interface for display|
+  |GP11 | DIN  | MOSI (Master OUT Slave IN) data pin of SPI interface|
+  |GP8 | DC | Data/Command pin of SPI interface|
+  |GP9 | CS   | Chip Select pin of SPI interface for display|
+  |GP12 | Reset | Display Reset Pin |
+  
+- Pico W and micro SD card interfacing
+
+  | Pico W | microSD Card | Function |
+  |---|---|---|
+  |GP18 | SCLK |Clock pin of SPI interface for microSD card |
+  |GP19 | DIN  | MOSI (Master OUT Slave IN) data pin of SPI interface|
+  |GP16 | DOUT | MISO (Master IN Slave OUT) data pin of SPI interface|
+  |GP17 | CS   | Chip Select pin of SPI interface for SDcard|
+
+- Joystick, Buzzer and LED Interfacing with Pico W
+  | Pico W | Buttons | Function |
+  |---|---|---|
+  |GP14 | JY_R |Programmable Joystick button|
+  |GP21 | JY_L |Programmable Joystick button|
+  |GP22 | JY_U |Programmable Joystick button|
+  |GP26 | JY_D |Programmable Joystick button|
+  |GP27 | JY_Sel |Programmable Joystick button|
+  |GP15 | Buzzer | Buzzer positive |
+  |GP25 | LED | OnBoard LED pin of Pico W  |
+ 
+- Breakout GPIOs
+  | Pico W |Physical Pin | Multi-Function |
+  |---|---|---|
+  |GP0 | 1  | General IO / SPI0 RX / I2C0 SDA / UART0 TX |
+  |GP1 | 2 | General IO / SPI0 CSn / I2C0 SCL / UART0 RX |
+  |GP2 | 4 | General IO / SPI0 SCK / I2C1 SDA |
+  |GP3 | 5 | General IO / SPI0 TX / I2C1 SCL |
+  |GP6 | 9 | General IO / SPI0 SCK / I2C1 SDA |
+  |GP7 | 10 | General IO / SPI0 TX / I2C1 SCL |
+  |GP28| 34 | General IO / ADC2 / SPI1 RX |
 
 
 ### 1. Step to install boot Firmware
