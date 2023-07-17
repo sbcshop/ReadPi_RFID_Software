@@ -80,8 +80,8 @@ Note: When SD card not connected, then above related pins can be used for normal
    Save whatever example code file you want to try as **main.py** in **Pico W** as shown in above [step 3](https://github.com/sbcshop/ReadPi_RFID_Software/tree/main#3-how-to-move-your-script-on-pico-w-of-readpi), also add related lib files with default name.
    In [example](https://github.com/sbcshop/ReadPi_RFID_Software/blob/main/examples) folder you will find demo example script code to test onboard components of ReadPi like 
    - [Buzzer test](https://github.com/sbcshop/ReadPi_RFID_Software/blob/main/examples/BuzzerDemo.py) : code to test onboard Buzzer
-   - [SD card demo](https://github.com/sbcshop/ReadPi_RFID_Software/blob/main/examples/sdcardDemo.py) : code to test onboard micro SD card interfacing, [sdcard.py]() lib file is required for the code to run successfully.
-   - [RFID module demo]() : testing onboard RFID module , buzzer and display unit of shield. 
+   - [SD card demo](https://github.com/sbcshop/ReadPi_RFID_Software/blob/main/examples/Demo_sdcard.py) : code to test onboard micro SD card interfacing, [sdcard.py]() lib file is required for the code to run successfully.
+   - [RFID module demo](https://github.com/sbcshop/ReadPi_RFID_Software/blob/main/examples/RFIDmodule_demo.py) : testing onboard RFID module , buzzer and display unit of shield. 
    
    Using this sample code as a guide, you can modify, build, and share codes!!  
    
