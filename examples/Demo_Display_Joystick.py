@@ -28,7 +28,6 @@ time.sleep(1)
 displayTest()
 
 while True:
-    print("Inside While")
     #get current value of buttons, 0 - when pressed and 1 - when released 
     val1 =  joyUp.value()
     val2 = joyDown.value()
