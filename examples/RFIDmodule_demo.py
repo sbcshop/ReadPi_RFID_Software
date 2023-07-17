@@ -1,4 +1,5 @@
-#include libraries for serial, spi and PWM methods
+#Demo code to Test RFID module of ReadPi
+#import libraries for serial, spi and PWM methods
 from machine import UART, Pin,SPI,PWM
 import time,utime
 import st7789 #library of TFT display controller uses SPI interface
