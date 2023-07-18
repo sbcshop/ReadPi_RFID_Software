@@ -1,5 +1,5 @@
 # ReadPi_RFID_Software
-<img src="https://cdn.shopify.com/s/files/1/1217/2104/files/readpi_1.png?v=1672989840">
+<img src="https://cdn.shopify.com/s/files/1/1217/2104/files/readpi_1BANNER.jpg?v=1689673444">
 
 ReadPi 125 KHz frequency based RFID Reader powered by Raspberry Pi Pico W unit. 
 This github provides getting started guide and other working details for ReadPi RFID version.
@@ -46,7 +46,7 @@ This github provides getting started guide and other working details for ReadPi 
 - (8) Pico W
 
 #### GPIO Pins Detail
-<img src="https://github.com/sbcshop/ArdiPi_Software/blob/main/images/ArdiPI_GPIO_PinDetail.jpg">
+<img src="https://github.com/sbcshop/ReadPi_RFID_Software/blob/main/images/READPI%20GPIO%20PINS%20breakout.jpg">
 
 ### Interfacing Details
 - Pico W and RFID module interfacing
