@@ -105,7 +105,7 @@ This github provides getting started guide and other working details for ReadPi 
    <img src="https://github.com/sbcshop/ArdiPi_Software/blob/main/images/pico_bootmode.gif">
    
    - It will mount as a Mass Storage Device called RPI-RP2.
-   - Drag and drop the MicroPython UF2 - [ReadPi_firmware](https://github.com/sbcshop/ReadPi_RFID_Software/blob/main/ReadPi_Firmware.uf2) file provided in this github onto the RPI-RP2 volume. Your Pico will reboot. You are now running MicroPython on ArdiPi.
+   - Drag and drop the MicroPython UF2 - [ReadPi_firmware](https://github.com/sbcshop/ReadPi_RFID_Software/blob/main/ReadPi_Firmware.uf2) file provided in this github onto the RPI-RP2 volume. Your Pico will reboot. You are now running MicroPython on ReadPi.
 
 ### 2. Onboard LED Blink 
    - Download **Thonny IDE** from [Download link](https://thonny.org/) as per your OS and install it.
@@ -119,7 +119,7 @@ This github provides getting started guide and other working details for ReadPi 
      
       <img src= "https://github.com/sbcshop/EnkPi_2.9_Software/blob/main/images/img3.jpg" />
      
-     Now that we've reached this point, you're executing your script through Thonny IDE, so if you unplug Pico, it will stop running. To run your script without using an IDE, simply power up ArdiPi and it should run your script, go to step 3. Once you have transferred your code to the ArdiPi board, to see your script running, just plug in power either way using micro USB or via Vin, both will work.
+     Now that we've reached this point, you're executing your script through Thonny IDE, so if you unplug Pico, it will stop running. To run your script without using an IDE, simply power up ReadPi and it should run your script, go to step 3. Once you have transferred your code to the ReadPi board, to see your script running, just plug in power either way using micro USB or via Vin, both will work.
 
 ### 3. How to move your script on Pico W of ReadPi
    - Click on File -> Save Copy -> select Raspberry Pi Pico , Then save file as main.py
