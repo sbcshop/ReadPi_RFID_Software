@@ -1,5 +1,5 @@
 # ReadPi_RFID_Software
-<img src="https://cdn.shopify.com/s/files/1/1217/2104/files/readpi_1BANNER.jpg?v=1689673444">
+<img src="https://github.com/sbcshop/ReadPi_RFID_Software/blob/main/images/banner_readpi.jpg">
 
 ReadPi 125 KHz frequency based RFID Reader powered by Raspberry Pi Pico W unit. 
 This github provides getting started guide and other working details for ReadPi RFID version.
