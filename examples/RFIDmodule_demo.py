@@ -14,10 +14,6 @@ def playtone(frequency): # to play tone on buzzer
 def bequiet(): # switch off buzzer
     buzzer.duty_u16(0)
     
-data = '1B2B3d41' # must be 4 byte, for write
-page_no = '5'
-baudrate = 9600
-
 spi = SPI(1, baudrate=40000000, sck=Pin(10), mosi=Pin(11))
 tft = st7789.ST7789(spi,240,240,reset=Pin(12, Pin.OUT),cs=Pin(9, Pin.OUT),dc=Pin(8, Pin.OUT),backlight=Pin(13, Pin.OUT),rotation=1)#SPI interface for tft screen
 
